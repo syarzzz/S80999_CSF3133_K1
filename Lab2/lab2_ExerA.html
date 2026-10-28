@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Faculty Programming Workshop 2026</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Faculty Programming Workshop 2026</h1>
+        <p>Empowering the next generation of coders with practical skills and hands-on experience.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#schedule">Schedule</a> |
+        <a href="#register">Register</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <article>
+            <h3>Keynote Speaker: Dr. Rosniza</h3>
+            <p>Dr. Rosniza will share insights into the future of artificial intelligence and automated software engineering.</p>
+        </article>
+        <article>
+            <h3>Hands-on Hackathon</h3>
+            <p>Students will work in teams to build a functional web prototype within a 4-hour timeframe.</p>
+        </article>
+    </section>
+
+    <!-- Event Schedule Section -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>08:30 AM - 09:00 AM</td>
+                <td>Registration & Breakfast</td>
+                <td rowspan="2">Main Hall</td>
+                <td>Dr. Rosniza</td>
+            </tr>
+            <tr>
+                <td>09:00 AM - 10:30 AM</td>
+                <td>Keynote Speech</td>
+                <td>Dr. Nazihah</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 12:30 PM</td>
+                <td>Web Development Lab</td>
+                <td>Lab A</td>
+                <td>Sir Amir</td>
+            </tr>
+            <tr>
+                <td>12:30 PM - 02:00 PM</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>02:00 PM - 04:30 PM</td>
+                <td>Hackathon Challenge</td>
+                <td>Lab B</td>
+                <td>Committee Team</td>
+            </tr>
+            <tr>
+                <td>04:30 PM - 05:00 PM</td>
+                <td>Closing & Prize Giving</td>
+                <td>Main Hall</td>
+                <td>Dean of Faculty</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register">
+        <h2>Registration</h2>
+        <form action="register.html" method="post">
+            <table>
+                <tr>
+                    <td><label for="fullname">Full Name:</label></td>
+                    <td><input type="text" id="fullname" name="fullname"></td>
+                </tr>
+                <tr>
+                    <td><label for="matric">Matric Number:</label></td>
+                    <td><input type="text" id="matric" name="matric"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="text" id="email" name="email"></td>
+                </tr>
+            </table>
+            <br>
+
+            <label>Year of Study:</label><br>
+            <input type="radio" id="year1" name="year_of_study" value="Year 1">
+            <label for="year1">Year 1</label>
+            <input type="radio" id="year2" name="year_of_study" value="Year 2">
+            <label for="year2">Year 2</label>
+            <input type="radio" id="year3" name="year_of_study" value="Year 3">
+            <label for="year3">Year 3</label>
+            <input type="radio" id="year4" name="year_of_study" value="Year 4">
+            <label for="year4">Year 4</label><br><br>
+
+            <label>Sessions to Join:</label><br>
+            <input type="checkbox" id="sess1" name="sessions" value="Keynote">
+            <label for="sess1">Keynote Speech</label><br>
+            <input type="checkbox" id="sess2" name="sessions" value="Lab">
+            <label for="sess2">Web Development Lab</label><br>
+            <input type="checkbox" id="sess3" name="sessions" value="Hackathon">
+            <label for="sess3">Hackathon Challenge</label><br><br>
+
+            <label for="programme">Programme / Faculty:</label>
+            <select id="programme" name="programme">
+                <option value="SE">Software Engineering</option>
+                <option value="CS">Computer Science</option>
+                <option value="MA">Mobile Applications</option>
+                <option value="DA">Data Analytics</option>
+            </select><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Organised by Faculty of Computer Science and Mathematics | Copyright &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
