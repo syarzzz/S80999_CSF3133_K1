@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Personal Profile</h1>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#profile-info">Profile Info</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact-form">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- Table Displaying Personal Information -->
+        <section id="profile-info">
+            <h2>Personal Information</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Details</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>Nik Nur Batrisyia</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>22</td>
+                        <td>Verified</td>
+                    </tr>
+                    <tr>
+                        <td>Occupation</td>
+                        <td>Computer Science Student</td>
+                        <td>Enrolled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Article Area for Extra Context -->
+        <article id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a passionate computer science student learning web development. 
+                I enjoy building clean, accessible, and user-friendly web applications.
+            </p>
+        </article>
+
+        <hr>
+
+        <!-- Simple Form -->
+        <section id="contact-form">
+            <h2>User Registration / Contact Form</h2>
+            
+            <form action="#" method="POST">
+                <!-- Text Inputs for Name and Email -->
+                <div>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+
+                <!-- Radio Buttons for Gender -->
+                <div>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <br>
+
+                <!-- Checkboxes for Favorite Hobbies -->
+                <div>
+                    <label>Favorite Hobbies:</label><br>
+                    <input type="checkbox" id="coding" name="hobbies" value="coding">
+                    <label for="coding">Coding</label><br>
+                    
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">Reading</label><br>
+                    
+                    <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                    <label for="gaming">Gaming</label><br>
+                    
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <label for="sports">Sports</label>
+                </div>
+                <br>
+
+                <!-- Submit Button -->
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; 2024 My Web Page</p>
+    </footer>
+
+</body>
+</html>
