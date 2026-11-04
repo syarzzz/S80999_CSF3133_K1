@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JOMO Cafe - Online Order</title>
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <div id="header">
+        <h1>
+            JOMO Cafe
+            <span>Freshly Baked, Made With Love!</span>
+        </h1>
+    </div>
+
+    <!-- NAVIGATION SECTION -->
+    <div id="nav">
+        <a href="#header">Home</a> |
+        <a href="#sidebar">Price List</a> |
+        <a href="#order">Order Now</a>
+    </div>
+
+    <!-- MAIN CONTENT SECTION -->
+    <div id="content">
+
+        <h2>Welcome to JOMO Cafe!</h2>
+
+        <!-- INTRODUCTION PARAGRAPH -->
+        <p>
+            Welcome to <strong>JOMO Cafe</strong>!
+            We offer <em>freshly baked</em> cupcakes
+            and delicious cake slices.
+            <span>Place your order online today!</span>
+            Visit our <a href="#sidebar">price list</a>
+            to see our products.
+        </p>
+
+        <!-- PRODUCT LIST -->
+        <h2>Our Products</h2>
+
+        <ul>
+            <li>Cupcake</li>
+            <li>Vanilla Cupcake</li>
+            <li>Strawberry Cake Slice</li>
+            <li>Chocolate Cake Slice</li>
+        </ul>
+
+        <!-- ORDER FORM SECTION -->
+        <div id="order">
+
+            <h2>Online Order Form</h2>
+
+            <form oninput="
+                this.elements['total'].value = (
+                    Number(this.elements['cupcakes'].value) * 3 +
+                    Number(this.elements['cakeSlices'].value) * 5
+                ).toFixed(2)
+            ">
+
+                <!-- CUSTOMER INFORMATION -->
+                <h3>Customer Information</h3>
+
+                <label for="customerName">Customer Name:</label>
+                <input type="text"
+                       id="customerName"
+                       name="customerName"
+                       placeholder="Enter your name"
+                       required
+                       autofocus>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="Enter phone number"
+                       required>
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter email address"
+                       required>
+                <br><br>
+
+                <!-- PICK-UP DETAILS -->
+                <h3>Pick-up Details</h3>
+
+                <label for="date">Pick-up Date:</label>
+                <input type="date"
+                       id="date"
+                       name="date">
+                <br><br>
+
+                <label for="time">Pick-up Time:</label>
+                <input type="time"
+                       id="time"
+                       name="time">
+                <br><br>
+
+                <!-- FLAVOUR SELECTION USING DATALIST -->
+                <label for="flavour">Choose Flavour:</label>
+
+                <input type="text"
+                       id="flavour"
+                       name="flavour"
+                       list="flavours"
+                       placeholder="Select a flavour">
+
+                <datalist id="flavours">
+                    <option value="Chocolate">
+                    <option value="Vanilla">
+                    <option value="Strawberry">
+                    <option value="Red Velvet">
+                </datalist>
+
+                <br><br>
+
+                <!-- ICING COLOUR -->
+                <label for="colour">Icing Colour:</label>
+                <input type="color"
+                       id="colour"
+                       name="colour">
+                <br><br>
+
+                <!-- SWEETNESS LEVEL -->
+                <label for="sweetness">Sweetness Level:</label>
+                <input type="range"
+                       id="sweetness"
+                       name="sweetness"
+                       min="1"
+                       max="5"
+                       step="1">
+                <br><br>
+
+                <!-- PRICE CALCULATOR -->
+                <h2>Calculate Your Order</h2>
+
+                <label for="cupcakes">
+                    Cupcakes (RM 3.00 each):
+                </label>
+
+                <input type="number"
+                       id="cupcakes"
+                       name="cupcakes"
+                       min="0"
+                       value="0">
+                <br><br>
+
+                <label for="cakeSlices">
+                    Cake Slices (RM 5.00 each):
+                </label>
+
+                <input type="number"
+                       id="cakeSlices"
+                       name="cakeSlices"
+                       min="0"
+                       value="0">
+                <br><br>
+
+                <!-- DISPLAY TOTAL PRICE -->
+                <strong>Total Price: RM </strong>
+
+                <output name="total"
+                        for="cupcakes cakeSlices">0.00</output>
+
+                <br><br>
+
+                <!-- SUBMIT BUTTON -->
+                <input type="submit" value="Submit Order">
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR SECTION -->
+    <div id="sidebar">
+
+        <h2>Price List</h2>
+
+        <ul>
+            <li>Cupcake - RM 3.00</li>
+            <li>Cake Slice - RM 5.00</li>
+            <li>Chocolate Cake - RM 15.00</li>
+            <li>Vanilla Cake - RM 18.00</li>
+        </ul>
+
+        <p>
+            Orders &gt; 10 pieces get a free drink!
+        </p>
+
+        <p>
+            JOMO Cafe&reg; offers fresh bakery products.
+        </p>
+
+        <p>
+            Freshly baked with love&nbsp;every day!
+        </p>
+
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div id="footer">
+
+        <p>
+            Thank you for supporting our bakery!
+        </p>
+
+        <p>
+            All prices are in RM (Malaysian Ringgit).
+        </p>
+
+        <p>
+            &copy; 2026 JOMO Cafe.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+    <!-- TESTING OBSERVATIONS
+
+    1. When the Submit button is clicked with compulsory
+       fields empty, the browser displays a validation
+       message asking the user to complete the required fields.
+
+    2. When "myemail" is entered into the email field,
+       the browser rejects it because it is not a valid
+       email address.
+
+    -->
+
+</body>
+</html>

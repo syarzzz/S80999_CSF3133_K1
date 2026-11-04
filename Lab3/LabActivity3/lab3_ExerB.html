@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+
+    <!--
+    ERROR IDENTIFICATION:
+
+    1. Line 1: Incorrect DOCTYPE declaration.
+       Corrected to <!DOCTYPE html>.
+
+    2. Line 9: Incorrect nesting of span and h1 tags.
+       Corrected by closing span before h1.
+
+    3. Line 11: Used span for the content section.
+       Corrected to div.
+
+    4. Line 13: Incorrect HTML entities.
+       Changed < to &lt; and corrected &amp;.
+
+    5. Line 14: Addition joined strings instead of
+       performing numerical addition.
+       Corrected using Number().
+
+    6. Line 18: Incorrect email input type.
+       Changed emial to email.
+
+    7. Lines 22-23: Datalist ID does not match
+       the input list attribute.
+       Corrected to movies.
+
+    8. Line 32: Range minimum and maximum values
+       were reversed.
+       Corrected to min=1 and max=5.
+
+    9. Line 33: Incorrect output for attribute.
+       Changed kid to child.
+
+    10. Line 38: Incorrect copyright entity.
+        Changed &Copy; to &copy;.
+
+    11. Lines 41, 54-55: Duplicate closing HTML tags.
+        Removed unnecessary closing tags.
+    -->
+
+    <!-- HEADER SECTION -->
+    <div id="header">
+
+        <h1>
+            e-Ticket
+            <span>Your Campus Cinema</span>
+        </h1>
+
+    </div>
+
+    <!-- MAIN CONTENT SECTION -->
+    <div id="content">
+
+        <h2>Book Your Ticket</h2>
+
+        <p>
+            Promotion: tickets &lt; RM10
+            for students &amp; staff!
+        </p>
+
+        <!-- BOOKING FORM SECTION -->
+        <form action="booking.php"
+              oninput="
+                document.getElementById('totalTickets').value =
+                Number(document.getElementById('adult').value) +
+                Number(document.getElementById('child').value);
+
+                document.getElementById('totalPrice').value =
+                (
+                    Number(document.getElementById('adult').value) * 12 +
+                    Number(document.getElementById('child').value) * 8
+                ).toFixed(2);
+              ">
+
+            <!-- Customer Name -->
+            <label for="name">Name:</label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your name"
+                   required
+                   autofocus>
+
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">E-mail:</label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+
+            <br><br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   placeholder="Enter your phone number"
+                   required>
+
+            <br><br>
+
+            <!-- Show Date -->
+            <label for="date">Show Date:</label>
+
+            <input type="date"
+                   id="date"
+                   name="date">
+
+            <br><br>
+
+            <!-- Show Time -->
+            <label for="time">Show Time:</label>
+
+            <input type="time"
+                   id="time"
+                   name="time">
+
+            <br><br>
+
+            <!-- Movie Selection Using Datalist -->
+            <label for="movie">Movie:</label>
+
+            <input type="text"
+                   id="movie"
+                   name="movie"
+                   list="movies"
+                   placeholder="Choose a movie">
+
+            <datalist id="movies">
+
+                <option value="Barbie of Swan Lake">
+                <option value="Charlie and the Chocolate Factory">
+                <option value="Adventure World">
+
+            </datalist>
+
+            <br><br>
+
+            <!-- Adult Tickets -->
+            <label for="adult">Adult Tickets:</label>
+
+            <input type="number"
+                   id="adult"
+                   name="adult"
+                   min="0"
+                   value="0">
+
+            <br><br>
+
+            <!-- Child Tickets -->
+            <label for="child">Child Tickets:</label>
+
+            <input type="number"
+                   id="child"
+                   name="child"
+                   min="0"
+                   value="0">
+
+            <br><br>
+
+            <!-- Service Rating -->
+            <label for="rating">Rate Our Service:</label>
+
+            <input type="range"
+                   id="rating"
+                   name="rating"
+                   min="1"
+                   max="5"
+                   step="1">
+
+            <br><br>
+
+            <!-- TOTAL TICKETS CALCULATOR -->
+            <h2>Booking Summary</h2>
+
+            <label>Total Tickets:</label>
+
+            <output name="total"
+                    id="totalTickets"
+                    for="adult child">0</output>
+
+            <br><br>
+
+            <!-- TOTAL PRICE CALCULATOR -->
+            <label>Total Price (RM):</label>
+
+            <output name="price"
+                    id="totalPrice"
+                    for="adult child">0.00</output>
+
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Book Now">
+
+        </form>
+
+    </div>
+
+    <!-- SIDEBAR SECTION: NOW SHOWING -->
+    <div id="sidebar">
+
+        <h2>Now Showing</h2>
+
+        <ul>
+            <li>
+                <strong>Barbie of Swan Lake</strong>
+
+                <span>PG</span>
+
+                <a href="https://www.youtube.com/watch?v=60PgxDHrdro"
+                   target="_blank"
+                   rel="noopener">
+                    Watch Trailer
+                </a>
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Charlie and the Chocolate Factory</strong>
+
+                <span>U</span>
+
+                <a href="https://www.youtube.com/watch?v=OFVGCUIXJls"
+                   target="_blank"
+                   rel="noopener">
+                    Watch Trailer
+                </a>
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Adventure World</strong>
+
+                <span>PG</span>
+
+                <a href="https://www.youtube.com/results?search_query=Adventure+World+trailer"
+                   target="_blank"
+                   rel="noopener">
+                    Watch Trailer
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div id="footer">
+
+        <p>
+            e-Ticket&reg; &ndash; Campus Cinema
+            &lt; RM10 every Tuesday
+        </p>
+
+        <p>
+            Tickets &amp; trailers available online.
+        </p>
+
+        <p>
+            &copy; 2026 CineKampus.
+            All rights reserved.
+        </p>
+
+    </div>
+</body>
+</html>
