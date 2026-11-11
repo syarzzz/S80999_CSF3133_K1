@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4 - Responsive Webpage</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+    body {
+        background-color: #fff7f9;
+    }
+
+    header h1 {
+        text-decoration: underline;
+        text-decoration-color: #ffffff;
+        text-underline-offset: 8px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Personal Webpage</h1>
+        <p>Welcome to My Responsive Website</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home</h2>
+            <hr>
+            <p>
+                Welcome to my personal webpage! This website is created
+                using HTML5 and CSS. It demonstrates semantic HTML
+                elements, multimedia content, responsive design and
+                interactive form elements.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <hr>
+            <article>
+                <h3>Introduction</h3>
+                <p>
+                    Hello! I am a student who is interested in technology,
+                    web development and learning new skills. I enjoy
+                    exploring different technologies and improving
+                    my knowledge of programming.
+                </p>
+            </article>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>My Favourite Video</h2>
+            <hr>
+            <figure>
+                <video controls width="100%">
+                    <source
+                        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                        type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+
+                <figcaption>
+                    Figure 1: A beautiful flower blooming in nature.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <hr>
+            <p>Some activities that I enjoy during my free time:</p>
+
+            <ul class="hobby-list">
+                <li>Listening to music</li>
+                <li>Reading books</li>
+                <li>Watching movies</li>
+                <li>Travelling</li>
+            </ul>
+        </section>
+
+        <!-- Contact and Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <hr>
+            <p>Please fill in the form below:</p>
+
+            <form action="#" method="get">
+
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <!-- Gender -->
+                <label>Gender:</label>
+
+                <div class="option-group">
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Male"
+                            required>
+                        Male
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Female">
+                        Female
+                    </label>
+                </div>
+
+                <!-- Favorite Hobbies -->
+                <label>Favorite Hobbies:</label>
+
+                <div class="option-group">
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobbies[]"
+                            value="Music">
+                        Listening to Music
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobbies[]"
+                            value="Reading">
+                        Reading
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobbies[]"
+                            value="Sports">
+                        Sports
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hobbies[]"
+                            value="Travelling">
+                        Travelling
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Personal Webpage. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

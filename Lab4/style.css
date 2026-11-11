@@ -1,0 +1,246 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #625568;
+    background-color: #fff7f9;
+}
+
+/* Header */
+header {
+    background-color: #f8c8dc;
+    color: #76546b;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #d9c9ed;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #655474;
+    text-decoration: none;
+    padding: 15px 22px;
+    transition: 0.3s;
+}
+
+/* Navigation Link States */
+nav ul li a:hover {
+    background-color: #f5d5e4;
+    text-decoration: underline;
+}
+
+nav ul li a:visited {
+    color: #806b91;
+}
+
+nav ul li a:active {
+    background-color: #c8b5df;
+    color: #ffffff;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(180, 140, 170, 0.12);
+}
+
+section h2 {
+    color: #b47b9d;
+    margin-bottom: 10px;
+}
+
+section hr {
+    border: none;
+    height: 2px;
+    background-color: #e8bfd6;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #9579ad;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+/* Video */
+figure {
+    margin-top: 15px;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: #000000;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #998a9b;
+}
+
+/* Hobbies */
+.hobby-list {
+    padding-left: 25px;
+}
+
+.hobby-list li {
+    padding: 5px;
+}
+
+/* Form */
+form {
+    background-color: #fff5f8;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #f0d4e2;
+}
+
+form > label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #95728f;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e4cbdc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #d6a8ca;
+    box-shadow: 0 0 5px rgba(214, 168, 202, 0.3);
+}
+
+/* Radio Buttons and Checkboxes */
+.option-group {
+    margin: 10px 0;
+}
+
+.option-group label {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.option-group input {
+    margin-right: 5px;
+    accent-color: #c99bc2;
+}
+
+/* Submit Button */
+button {
+    background-color: #d9b6d9;
+    color: #59445f;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c5a2cf;
+    text-decoration: underline;
+}
+
+button:active {
+    background-color: #ad8dbb;
+    transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+    background-color: #d9c9ed;
+    color: #655474;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+
+    main {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .option-group label {
+        display: block;
+    }
+}
