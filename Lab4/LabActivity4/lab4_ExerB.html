@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body>
+
+    <!-- Error Corrections:
+    1. Line 9: Changed list-style-type: no to none.
+    2. Lines 14-16: Corrected the order of link states.
+    3. Line 17: Changed overlined to overline.
+    4. Line 18: Added a missing colon after color.
+    5. Line 22: Added the missing dot before highlight.
+    6. Line 22: Added the missing closing brace for #intro.
+    7. Line 34: Changed href="menu" to href="#menu".
+    8. Lines 42 and 46: Replaced duplicate article IDs with unique classes.
+    9. Line 53: Added controls to the video.
+    10. Line 54: Corrected the video MIME type to video/mp4.
+    11. Added viewport meta tag for responsive design.
+    12. Added external CSS file cafe.css.
+    13. Added old prices and promotion styling.
+    14. Added video caption using figure and figcaption.
+    15. Added feedback form and navigation link.
+    16. Added address and mailto link in the footer.
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+        <p>Fresh Coffee, Delicious Food and Happy Moments!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>
+                Enjoy our delicious traditional Malaysian coffee.
+            </p>
+            <p>
+                <span class="old-price">RM 4.50</span>
+                <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>
+                A traditional Malaysian favourite served with
+                sambal, egg and crispy anchovies.
+            </p>
+            <p>
+                <span class="old-price">RM 6.50</span>
+                <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video width="500" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Discover our café and delicious food!
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Visit Type:</p>
+
+            <input type="radio" id="dine" name="visit" value="Dine-in">
+            <label for="dine">Dine-in</label>
+
+            <input type="radio" id="takeaway" name="visit" value="Take-away">
+            <label for="takeaway">Take-away</label>
+
+            <p>Favourite Items:</p>
+
+            <input type="checkbox" id="coffee" name="favourite" value="Kopi Tarik">
+            <label for="coffee">Kopi Tarik</label>
+
+            <input type="checkbox" id="nasi" name="favourite" value="Nasi Lemak">
+            <label for="nasi">Nasi Lemak</label>
+
+            <input type="checkbox" id="cake" name="favourite" value="Cake">
+            <label for="cake">Cake</label>
+
+            <br><br>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus. All Rights Reserved.</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:ecafe@gmail.com">ecafe@gmail.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>

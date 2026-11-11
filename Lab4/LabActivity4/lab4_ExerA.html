@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu - Tourism Promotion</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Discover Beautiful Terengganu</h1>
+        <p class="center">Explore the beauty, culture and nature of Terengganu!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Trip Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Terengganu</h2>
+        <p>
+            Terengganu is a beautiful state in Malaysia known for its
+            stunning islands, beaches, traditional food and rich culture.
+            Come and experience an unforgettable holiday!
+        </p>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+
+        <article class="card">
+            <h3>Redang Island</h3>
+            <p>
+                Enjoy crystal-clear water, beautiful beaches and
+                amazing marine life.
+            </p>
+            <p>
+                <span class="old-price">RM 299</span>
+                <span class="price">RM 199</span>
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Perhentian Island</h3>
+            <p>
+                Discover beautiful coral reefs and enjoy exciting
+                snorkelling activities.
+            </p>
+            <p>
+                <span class="old-price">RM 350</span>
+                <span class="price">RM 250</span>
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Drawbridge Kuala Terengganu</h3>
+            <p>
+                Visit the iconic drawbridge and enjoy the beautiful
+                city scenery.
+            </p>
+            <p>
+                <span class="old-price">RM 100</span>
+                <span class="price">RM 70</span>
+            </p>
+        </article>
+
+        <p>Trip seats filled:</p>
+        <meter min="0" max="40" value="28">28 out of 40</meter>
+        <p>28 out of 40 seats have been booked!</p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Explore Beautiful Terengganu</h2>
+
+        <figure>
+            <video width="600" height="350" controls>
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption class="caption">
+                Experience the beautiful islands, beaches and attractions
+                of Terengganu, Malaysia.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Form Section -->
+    <section id="trip">
+        <h2>Plan Your Trip With Us</h2>
+
+        <form class="trip-form">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+
+            <p>Traveller Type:</p>
+
+            <input type="radio" name="traveller" value="Student">
+            Student
+
+            <input type="radio" name="traveller" value="Staff">
+            Staff
+
+            <input type="radio" name="traveller" value="Public">
+            Public
+
+            <p>Interests:</p>
+
+            <input type="checkbox" name="interest" value="Islands">
+            Islands
+
+            <input type="checkbox" name="interest" value="Food">
+            Food
+
+            <input type="checkbox" name="interest" value="Culture">
+            Culture
+
+            <input type="checkbox" name="interest" value="Nature">
+            Nature
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu. All Rights Reserved.</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:visit@gmail.com">visit@gmail.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF0F0;
+    margin: 0;
+    color: #594747;
+}
+
+/* Header Styling */
+header {
+    background-color: #EBD6D6;
+    padding: 35px;
+    text-align: center;
+}
+
+header h1 {
+    color: #864F5A;
+    text-decoration: overline;
+    font-size: 32px;
+}
+
+header p {
+    color: #80666A;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #864F5A;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Link States */
+a:link {
+    color: #864F5A;
+}
+
+a:visited {
+    color: #A47B87;
+}
+
+a:hover {
+    color: #D9AEB8;
+}
+
+a:active {
+    color: #653943;
+}
+
+/* Navigation Link Styling */
+nav a:link,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    background-color: #B98591;
+    color: white;
+}
+
+nav a:active {
+    background-color: #653943;
+    color: white;
+}
+
+/* Section Styling */
+section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFAFA;
+    border-radius: 12px;
+}
+
+/* Heading Styling */
+h2 {
+    color: #864F5A;
+    text-decoration: underline;
+}
+
+/* Menu Section */
+#menu {
+    background-color: #F3E2E5;
+}
+
+.intro {
+    font-size: 18px;
+    background-color: #FAF0F0;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 8px;
+}
+
+/* Menu Items */
+.item {
+    background-color: #FFFAFA;
+    border: 1px solid #E5C8CF;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.item h3 {
+    color: #864F5A;
+}
+
+/* Promotion Prices */
+.old-price {
+    color: #B5A0A3;
+    text-decoration: line-through;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #A05265;
+    font-size: 18px;
+}
+
+/* Video Section */
+#video {
+    text-align: center;
+    background-color: #F5E8E8;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #E5C8CF;
+    border-radius: 12px;
+}
+
+figcaption {
+    color: #80666A;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+/* Feedback Form */
+#feedback {
+    background-color: #F3E2E5;
+}
+
+.feedback-form {
+    background-color: #FFFAFA;
+    padding: 20px;
+    border: 2px solid #D9B7C0;
+    width: 80%;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.feedback-form label {
+    margin: 8px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #E5C8CF;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+button {
+    background-color: #864F5A;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B98591;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #864F5A;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a:link,
+footer a:visited {
+    color: #FAF0F0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+
+    .feedback-form {
+        width: 85%;
+        box-sizing: border-box;
+    }
+}

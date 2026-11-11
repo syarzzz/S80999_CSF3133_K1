@@ -1,0 +1,212 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F5EB;
+    margin: 0;
+    color: #465447;
+}
+
+/* Header Background Image */
+header {
+    background-image: url("terengganu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-decoration: underline;
+}
+
+header p {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #647C65;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #A8C3A0;
+}
+
+/* Link States */
+a:link {
+    color: #647C65;
+}
+
+a:visited {
+    color: #8B7896;
+}
+
+a:hover {
+    color: #A0B98D;
+}
+
+a:active {
+    color: #526B50;
+}
+
+/* Section Styling */
+section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+/* ID Selectors */
+#destinations {
+    background-color: #E5F2E9;
+}
+
+#video {
+    text-align: center;
+    background-color: #F0F4E9;
+}
+
+/* Class Selectors */
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #DCE8D5;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.price {
+    color: #587B50;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999999;
+}
+
+.caption {
+    font-style: italic;
+    color: #647C65;
+}
+
+/* Heading Decorations */
+h1 {
+    text-decoration: overline;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #647C65;
+}
+
+/* Trip Form */
+.trip-form {
+    background-color: #E5F2E9;
+    padding: 20px;
+    border: 2px solid #A8C3A0;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.trip-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #C5D5BF;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+button {
+    background-color: #647C65;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8FA98A;
+}
+
+/* Footer */
+footer {
+    background-color: #647C65;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Video Section */
+#video {
+    text-align: center;
+    background-color: #E5F2E9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#video video {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #DCE8D5;
+    border-radius: 10px;
+}
+
+.caption {
+    color: #647C65;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+
+    .trip-form {
+        width: 85%;
+    }
+}
