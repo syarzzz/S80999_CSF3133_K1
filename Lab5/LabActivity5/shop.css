@@ -1,0 +1,150 @@
+/* General Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBF7F0;
+    margin: 0;
+    padding: 0;
+    color: #2C2C2C;
+}
+
+/* Header with Background Image */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("books.jpg");
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 50px;
+}
+
+/* Heading Font */
+header h1,
+h2 {
+    font-family: 'Merriweather', serif;
+}
+
+header h1 {
+    color: white;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Navigation Hover Effect */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Active Navigation Link */
+nav li a.active {
+    background-color: #102854;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #1b5f3c;
+    border-left: 5px solid #E67E22;
+    padding-left: 12px;
+}
+
+/* Product Table */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table Cells */
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+/* Table Header */
+#products th {
+    background-color: #102854;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Alternating Table Row Colours */
+#products tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+/* Table Hover Effect */
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* Right Align Price Column */
+#products .price {
+    text-align: right;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #EFE6D8;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+    }
+
+    nav li a {
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    #products {
+        font-size: 12px;
+    }
+
+    #products th,
+    #products td {
+        padding: 7px;
+    }
+}

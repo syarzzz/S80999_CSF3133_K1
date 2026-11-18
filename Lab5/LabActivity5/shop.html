@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>Campus Bookstore</title>
+
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+            <!-- External CSS -->
+            <link rel="stylesheet" href="shop.css">
+
+            <style>
+                h1{
+                    text-align:center;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <!--
+            ERROR IDENTIFICATION AND CORRECTIONS
+
+            1. shop.html Line 7:
+            Changed rel="stylesheets" to rel="stylesheet".
+
+            2. shop.html Lines 10-12:
+            Moved the style element from the body to the head.
+
+            3. shop.html Line 13:
+            Added a nav element to organize the navigation menu.
+
+            4. shop.html Line 18:
+            Corrected the inline CSS syntax from color=#1B4F72
+            to color: #1B4F72.
+
+            5. shop.css Line 2:
+            Corrected Robotto to Roboto.
+
+            6. shop.css Line 4:
+            Corrected no repeat to no-repeat.
+
+            7. shop.css Line 5:
+            Corrected bacground-position to background-position.
+
+            8. shop.css Line 18:
+            Changed display: inline to display: block.
+
+            9. shop.css Line 23:
+            Corrected li:a:hover to li a:hover.
+
+            10. shop.css Line 26:
+                Corrected the table ID selector to #products.
+
+            11. shop.css Line 27:
+                Changed border-collapse: collapsed to collapse.
+
+            12. shop.css Line 34:
+                Changed nth-child(2) to nth-child(even).
+
+            13. shop.css Line 37:
+                Corrected tr:hovered to tr:hover.
+
+            14. shop.css Line 45:
+                Added a missing semicolon after the background-color property.
+
+            15. shop.html:
+                Added header, main and footer structural elements.
+
+            16. shop.css:
+                Added an active navigation class and improved table styling.
+            -->
+
+            <!-- Header -->
+            <header>
+                <h1>Campus Bookstore</h1>
+                <p>Textbooks, stationery and more for every student.</p>
+            </header>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main id="home">
+
+                <section id="books">
+                    <h2>Our Products</h2>
+
+                    <p>
+                        Welcome to Campus Bookstore! We provide a variety of
+                        textbooks, stationery and useful gadgets for students.
+                        Find everything you need for your studies at affordable prices.
+                    </p>
+
+                    <!-- Product Table -->
+                    <table id="products">
+
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Category</th>
+                                <th>Price (RM)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Web Design Basics</td>
+                                <td>Textbook</td>
+                                <td class="price">45.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>A4 Notebook</td>
+                                <td>Stationery</td>
+                                <td class="price">6.50</td>
+                            </tr>
+
+                            <tr>
+                                <td>USB Drive 32GB</td>
+                                <td>Gadget</td>
+                                <td class="price">25.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Highlighter Set</td>
+                                <td>Stationery</td>
+                                <td class="price">9.90</td>
+                            </tr>
+
+                            <tr>
+                                <td>HTML and CSS Guide</td>
+                                <td>Textbook</td>
+                                <td class="price">35.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Scientific Calculator</td>
+                                <td>Gadget</td>
+                                <td class="price">55.00</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer id="contact">
+                <p>&copy; 2026 Campus Bookstore. All Rights Reserved. | Contact: campusbookstore@email.com</p>
+            </footer>
+
+        </body>
+    </html>
+</DOCTYPE>
